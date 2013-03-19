@@ -6,93 +6,93 @@ Gives access to projects, iterations, stories, memberships, attachments, comment
 ### Mappings
 
 #### Project
-id, Integer
-name, String
-iteration_length, Integer
-week_start, String
-point_scale, String
-velocity_scheme, String
-current_velocity, Integer
-initial_velocity, Integer
-number_of_done_iterations_to_show, Integer
-labels, String
-allow_attachments, Boolean
-public, Boolean
-use_https, Boolean
-bugs_and_chores_are_estimatable, Boolean
-comit_mode, Boolean
-last_activity_at, DateTime
+    id, Integer
+    name, String
+    iteration_length, Integer
+    week_start, String
+    point_scale, String
+    velocity_scheme, String
+    current_velocity, Integer
+    initial_velocity, Integer
+    number_of_done_iterations_to_show, Integer
+    labels, String
+    allow_attachments, Boolean
+    public, Boolean
+    use_https, Boolean
+    bugs_and_chores_are_estimatable, Boolean
+    comit_mode, Boolean
+    last_activity_at, DateTime
 
 
 #### Iteraion
-id, Integer
-number, Integer
-start, DateTime
-finish, DateTime
-team_strength, Float
+    id, Integer
+    number, Integer
+    start, DateTime
+    finish, DateTime
+    team_strength, Float
 
 #### Story
-id, Integer
-project_id, Integer
-story_type, String
-url, String
-estimate_type, Float
-current_state, String
-description, String
-name, String
-requested_by, String
-owned_by, String
-created_at, DateTime
-accepted_at, DateTime
-labels, String
+    id, Integer
+    project_id, Integer
+    story_type, String
+    url, String
+    estimate_type, Float
+    current_state, String
+    description, String
+    name, String
+    requested_by, String
+    owned_by, String
+    created_at, DateTime
+    accepted_at, DateTime
+    labels, String
 
 #### Task
-id, Integer
-description, String
-position, Integer
-complete, Boolean
-created_at, DateTime
+    id, Integer
+    description, String
+    position, Integer
+    complete, Boolean
+    created_at, DateTime
 
 #### Comment
-id, Integer
-text, String
-created_at, DateTime
-person_name, String
-person_initials, String
+    id, Integer
+    text, String
+    created_at, DateTime
+    person_name, String
+    person_initials, String
 
 #### Integration
-id, Integer
-type, String
-name, String
-field_name, String
-field_label, String
-active, Boolean 
+    id, Integer
+    type, String
+    name, String
+    field_name, String
+    field_label, String
+    active, Boolean 
 
 #### Attachment
-id, Integer
-filename, String
-description, String
-uploaded_by, String
-uploaded_at, DateTime
-url, String
+    id, Integer
+    filename, String
+    description, String
+    uploaded_by, String
+    uploaded_at, DateTime
+    url, String
 
 #### Membership
-id, Integer
-role, String
-name, String
-email, String
-initials, String
+    id, Integer
+    role, String
+    name, String
+    email, String
+    initials, String
 
 ### Associations
 
-`project has_many :iterations`
-`project has_many :stories, through: :iterations`
-`iteration has_many :stories`
-`story belongs_to :project`
-`story has_many :attachments`
-`story has_many :tasks`
-`story has_many :comments`
-
+    project has_many :iterations
+    project has_many :stories, through: :iterations
+    iteration has_many :stories
+    story belongs_to :project
+    story has_many :attachments
+    story has_many :tasks
+    story has_many :comments
+    
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -109,8 +109,8 @@ Or install it yourself as:
 
 ## Usage
 
-`PivotalSync::Client.token = "your token"`
-`projects = PivotalSync::Project.all`
+    PivotalSync::Client.token = "your token"
+    projects = PivotalSync::Project.all
 
 ## Contributing
 
