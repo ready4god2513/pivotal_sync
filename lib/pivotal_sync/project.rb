@@ -35,10 +35,10 @@ module PivotalSync
     element :number_of_done_iterations_to_show, Integer
     element :labels, String
     element :allow_attachments, Boolean
-    element :public, Boolean
+    element :is_public, Boolean, tag: "public"
     element :use_https, Boolean
     element :bugs_and_chores_are_estimatable, Boolean
-    element :comit_mode, Boolean
+    element :commit_mode, Boolean
     element :last_activity_at, DateTime
     has_many :memberships, Membership
     has_many :integrations, Integration

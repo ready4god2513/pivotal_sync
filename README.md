@@ -23,10 +23,10 @@ Gives access to projects, iterations, stories, memberships, attachments, comment
     number_of_done_iterations_to_show, Integer
     labels, String
     allow_attachments, Boolean
-    public, Boolean
+    is_public, Boolean
     use_https, Boolean
     bugs_and_chores_are_estimatable, Boolean
-    comit_mode, Boolean
+    commit_mode, Boolean
     last_activity_at, DateTime
 
 #### Iteration
