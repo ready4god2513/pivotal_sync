@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comments type="array">
+  <comment>
+    <id type="integer">39331775</id>
+    <text>Adding some comments here</text>
+    <author>
+      <person>
+        <id type="integer">126384</id>
+        <name>Brandon Hansen</name>
+        <initials>BH</initials>
+      </person>
+    </author>
+    <created_at type="datetime">2013/03/19 21:25:27 UTC</created_at>
+  </comment>
+  <comment>
+    <id type="integer">39331777</id>
+    <text>And a picture</text>
+    <author>
+      <person>
+        <id type="integer">126384</id>
+        <name>Brandon Hansen</name>
+        <initials>BH</initials>
+      </person>
+    </author>
+    <created_at type="datetime">2013/03/19 21:25:27 UTC</created_at>
+  </comment>
+</comments>

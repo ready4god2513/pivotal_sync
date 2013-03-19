@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<memberships type="array">
+  <membership>
+    <id type="integer">2930385</id>
+    <member>
+      <person>
+        <id type="integer">126384</id>
+        <name>Brandon Hansen</name>
+        <initials>BH</initials>
+      </person>
+    </member>
+    <role>Owner</role>
+    <project>
+      <id type="integer">784123</id>
+      <name>Pivotal Sync Rspec</name>
+    </project>
+  </membership>
+</memberships>

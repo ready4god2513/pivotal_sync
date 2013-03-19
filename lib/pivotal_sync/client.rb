@@ -15,6 +15,10 @@ module PivotalSync
           "Content-Type" => "application/xml"
         })
       end
+      
+      def clear_connections
+        @connections = nil
+      end
 
       protected
 
