@@ -5,4 +5,5 @@ gem "happymapper"
 
 group :test do
   gem "rspec"
+  gem "nokogiri"
 end
