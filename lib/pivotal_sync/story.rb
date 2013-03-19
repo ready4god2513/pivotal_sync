@@ -5,16 +5,11 @@ module PivotalSync
     class << self
       
       def all(project_id)
-        @all ||= {}
-        @all[project_id] ||= parse(Client.connection["projects/#{project_id}/stories"].get)
+        parse(Client.connection["projects/#{project_id}/stories"].get)
       end
       
       def find(id)
-        if @all
-          @all.detect { |story| story.id == id}
-        else
-          parse(Client.connection["stories/#{id}"].get)
-        end
+        parse(Client.connection["stories/#{id}"].get)
       end
       
     end

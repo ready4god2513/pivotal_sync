@@ -5,7 +5,7 @@ module PivotalSync
     class << self
       
       def all(project_id)
-        @all ||= parse(Client.connection["projects/#{project_id}/iterations"].get)
+        parse(Client.connection["projects/#{project_id}/iterations"].get)
       end
       
     end
