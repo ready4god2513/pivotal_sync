@@ -40,13 +40,11 @@ module PivotalSync
     end
     
     def comments
-      @comments ||= {}
-      @comments[id] ||= Comment.all(project_id, id)
+      Comment.all(project_id, id)
     end
     
     def tasks
-      @tasks ||= {}
-      @tasks[id] ||= Task.all(project_id, id)
+      Task.all(project_id, id)
     end
     
   end

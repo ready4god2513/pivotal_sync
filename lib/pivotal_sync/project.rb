@@ -44,13 +44,11 @@ module PivotalSync
     has_many :integrations, Integration
     
     def iterations
-      @iterations ||= {}
-      @iterations[id] ||= Iteration.all(id)
+      Iteration.all(id)
     end
     
     def stories
-      @stories ||= {}
-      @stories[id] ||= iterations.map { |i| i.stories }.flatten
+      iterations.map { |i| i.stories }.flatten
     end
     
   end
