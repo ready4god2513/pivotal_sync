@@ -13,7 +13,6 @@ module PivotalSync
     element :id, Integer
     element :text, String
     element :created_at, DateTime
-    element :person_name, String, tag: "name", deep: true
-    element :person_initials, String, tag: "initials", deep: true 
+    has_one :author, Person 
   end
 end

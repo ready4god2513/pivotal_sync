@@ -4,9 +4,8 @@ module PivotalSync
     
     element :id, Integer
     element :filename, String
-    element :description, String
-    element :uploaded_by, String
-    element :uploaded_at, DateTime
     element :url, String
+    element :uploaded_at, DateTime
+    has_one :uploaded_by, Person
   end
 end

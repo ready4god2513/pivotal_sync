@@ -20,9 +20,15 @@ module PivotalSync
     
     element :id, Integer
     element :name, String
+    element :created_at, DateTime
+    element :version, Integer
     element :iteration_length, Integer
-    element :week_start, String
+    element :week_start_day, String
     element :point_scale, String
+    element :account, String
+    element :first_iteration_start_time, DateTime
+    element :current_iteration_number, Integer
+    element :enable_tasks, Boolean
     element :velocity_scheme, String
     element :current_velocity, Integer
     element :initial_velocity, Integer

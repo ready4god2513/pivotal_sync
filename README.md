@@ -8,9 +8,15 @@ Gives access to projects, iterations, stories, memberships, attachments, comment
 #### Project
     id, Integer
     name, String
+    created_at, DateTime
+    version, Integer
     iteration_length, Integer
-    week_start, String
+    week_start_day, String
     point_scale, String
+    account, String
+    first_iteration_start_time, DateTime
+    current_iteration_number, Integer
+    enable_tasks, Boolean
     velocity_scheme, String
     current_velocity, Integer
     initial_velocity, Integer
@@ -23,8 +29,7 @@ Gives access to projects, iterations, stories, memberships, attachments, comment
     comit_mode, Boolean
     last_activity_at, DateTime
 
-
-#### Iteraion
+#### Iteration
     id, Integer
     number, Integer
     start, DateTime
@@ -36,16 +41,15 @@ Gives access to projects, iterations, stories, memberships, attachments, comment
     project_id, Integer
     story_type, String
     url, String
-    estimate_type, Float
+    estimate, Float
     current_state, String
     description, String
     name, String
-    requested_by, String
-    owned_by, String
     created_at, DateTime
+    updated_at, DateTime
     accepted_at, DateTime
     labels, String
-
+    
 #### Task
     id, Integer
     description, String
@@ -57,8 +61,6 @@ Gives access to projects, iterations, stories, memberships, attachments, comment
     id, Integer
     text, String
     created_at, DateTime
-    person_name, String
-    person_initials, String
 
 #### Integration
     id, Integer
@@ -71,16 +73,21 @@ Gives access to projects, iterations, stories, memberships, attachments, comment
 #### Attachment
     id, Integer
     filename, String
-    description, String
-    uploaded_by, String
-    uploaded_at, DateTime
     url, String
-
+    uploaded_at, DateTime
+    
 #### Membership
     id, Integer
     role, String
+    user_id, Integer
     name, String
     email, String
+    initials, String
+    
+#### Person
+    id, Integer
+    email, String
+    name, String
     initials, String
 
 ### Associations
@@ -92,6 +99,11 @@ Gives access to projects, iterations, stories, memberships, attachments, comment
     story has_many :attachments
     story has_many :tasks
     story has_many :comments
+    
+    attachment has_one :uploaded_by (Person)
+    comment has_one :author (Person)
+    story has_one :owned_by (Person)
+    story has_one :requested_by (Person)
     
 ## Installation
 

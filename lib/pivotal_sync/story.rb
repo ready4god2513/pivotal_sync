@@ -23,15 +23,16 @@ module PivotalSync
     element :project_id, Integer
     element :story_type, String
     element :url, String
-    element :estimate_type, Float
+    element :estimate, Float
     element :current_state, String
     element :description, String
     element :name, String
-    element :requested_by, String
-    element :owned_by, String
     element :created_at, DateTime
+    element :updated_at, DateTime
     element :accepted_at, DateTime
     element :labels, String
+    has_one :owned_by, Person
+    has_one :requested_by, Person
     has_many :attachments, Attachment
     
     def project
