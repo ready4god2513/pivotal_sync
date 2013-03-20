@@ -11,13 +11,6 @@
 
 &#402;&#172;&#729;&#8706;&#730;&#223;&#8710;&#729;&#402;</description>
     <name>Just a little test</name>
-    <requested_by>
-      <person>
-        <id type="integer">126384</id>
-        <name>Brandon Hansen</name>
-        <initials>BH</initials>
-      </person>
-    </requested_by>
     <owned_by>
       <person>
         <id type="integer">126384</id>
@@ -25,6 +18,13 @@
         <initials>BH</initials>
       </person>
     </owned_by>
+    <requested_by>
+      <person>
+        <id type="integer">1233535</id>
+        <name>Chris Gratigny</name>
+        <initials>CG</initials>
+      </person>
+    </requested_by>
     <created_at type="datetime">2013/03/19 21:25:26 UTC</created_at>
     <updated_at type="datetime">2013/03/19 21:33:26 UTC</updated_at>
     <labels>123,testing,&#8710;&#730;&#730;&#8706;&#229;&#402;</labels>

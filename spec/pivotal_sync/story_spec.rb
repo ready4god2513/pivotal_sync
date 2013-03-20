@@ -65,15 +65,15 @@ describe PivotalSync::Story do
       end
       
       it "should have an id" do
-        requested_by.id.should == 126384
+        requested_by.id.should == 1233535
       end
       
       it "should be requested by brandon" do
-        requested_by.name.should == "Brandon Hansen"
+        requested_by.name.should == "Chris Gratigny"
       end
       
       it "should have initials BH" do
-        requested_by.initials.should == "BH"
+        requested_by.initials.should == "CG"
       end
       
     end

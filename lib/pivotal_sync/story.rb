@@ -29,13 +29,10 @@ module PivotalSync
     has_one :owned_by, Person
     has_one :requested_by, Person
     has_many :attachments, Attachment
+    has_many :comments, Comment
     
     def project
       Project.find(project_id)
-    end
-    
-    def comments
-      Comment.all(project_id, id)
     end
     
     def tasks
