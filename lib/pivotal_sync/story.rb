@@ -1,4 +1,5 @@
 module PivotalSync
+  
   class Story
     include HappyMapper
     
