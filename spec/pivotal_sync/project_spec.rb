@@ -38,6 +38,10 @@ describe PivotalSync::Project do
         membership.id.should_not be_nil
       end
       
+      it "should have a role" do
+        membership.role.should_not be_nil
+      end
+      
       it "should have a name" do
         membership.name.should_not be_nil
       end
