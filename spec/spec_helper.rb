@@ -22,6 +22,7 @@ Dir[File.expand_path(File.join(File.dirname(__FILE__),"support","**","*.rb"))].e
 RSpec.configure do |config|
   config.add_setting :fixture_path
   config.fixture_path = "#{File.expand_path(File.dirname(__FILE__))}/fixtures/"
+  # config.filter_run :focus => true
   config.before :each do
     PivotalSync::Client.clear_connections
   end

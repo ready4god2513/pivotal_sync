@@ -15,6 +15,7 @@ module PivotalSync
       
     end
     
+    tag "story"
     element :id, Integer
     element :project_id, Integer
     element :story_type, String

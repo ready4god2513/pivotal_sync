@@ -1,4 +1,5 @@
 module PivotalSync
+  
   class Comment
     include HappyMapper
     
