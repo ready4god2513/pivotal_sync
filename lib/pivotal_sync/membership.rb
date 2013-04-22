@@ -2,7 +2,7 @@ module PivotalSync
   class Membership
     include HappyMapper
     
-    element :id, Integer
+    element :id, Integer, xpath: 'membership/id'
     element :role, String
     element :user_id, Integer, tag: "id", deep: true
     element :name, String, deep: true
