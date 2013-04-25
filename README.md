@@ -102,8 +102,8 @@ Gives access to projects, iterations, stories, memberships, attachments, comment
     
     attachment has_one :uploaded_by (Person)
     comment has_one :author (Person)
-    story has_one :owned_by (Person)
-    story has_one :requested_by (Person)
+    story has_one :ownedby (Person)
+    story has_one :requestedby (Person)
     
 ## Installation
 
