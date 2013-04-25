@@ -18,6 +18,10 @@ describe PivotalSync::Story do
       story.id.should_not be_nil
     end
     
+    it "should have name" do
+      story.name.should_not be_nil
+    end
+    
     it "should have labels" do
       story.labels.should_not be_nil
     end
@@ -68,11 +72,11 @@ describe PivotalSync::Story do
         requested_by.id.should == 1233535
       end
       
-      it "should be requested by brandon" do
+      it "should be requested by Chris" do
         requested_by.name.should == "Chris Gratigny"
       end
       
-      it "should have initials BH" do
+      it "should have initials CG" do
         requested_by.initials.should == "CG"
       end
       
@@ -81,7 +85,7 @@ describe PivotalSync::Story do
     context "attachments" do
       
       it "should have many attachments" do
-        story.tasks.should be_a(Array)
+        story.attachments.should be_a(Array)
       end
       
     end

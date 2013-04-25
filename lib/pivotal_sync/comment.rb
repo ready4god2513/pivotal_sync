@@ -13,6 +13,6 @@ module PivotalSync
     element :id, Integer
     element :text, String
     element :created_at, DateTime
-    has_one :author, Person 
+    has_one :author, Person
   end
 end

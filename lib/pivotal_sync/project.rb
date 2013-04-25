@@ -36,7 +36,7 @@ module PivotalSync
     element :bugs_and_chores_are_estimatable, Boolean
     element :commit_mode, Boolean
     element :last_activity_at, DateTime
-    has_many :memberships, Membership
+    has_many :memberships, Membership, :tag => 'membership'
     has_many :integrations, Integration
     
     def iterations

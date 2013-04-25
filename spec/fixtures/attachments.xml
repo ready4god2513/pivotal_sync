@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<attachments type="array">
+  <attachment>
+    <id type="integer">17148567</id>
+    <filename>Screen_Shot_2013-03-19_at_12.01.09_PM.png</filename>
+    <uploaded_by>
+      <person>
+        <id type="integer">126384</id>
+        <name>Brandon Hansen</name>
+        <initials>BH</initials>
+      </person>
+    </uploaded_by>
+    <s3_resource>
+      <url>https://s3.amazonaws.com/prod.tracker2/resource/17148567/Screen_Shot_2013-03-19_at_12.01.09_PM.png?AWSAccessKeyId=AKIAIKWOAN6H4H3QMJ6Q&amp;Expires=1363730609&amp;Signature=1pyBFrkP86%2FqfErB%2FlP63H%2Bo41s%3D</url>
+      <expires type="datetime">2013/03/19 22:03:29 UTC</expires>
+    </s3_resource>
+    <uploaded_at type="datetime">2013/03/19 21:25:21 UTC</uploaded_at>
+    <url>https://www.pivotaltracker.com/resource/download/17148567</url>
+  </attachment>
+</attachments>

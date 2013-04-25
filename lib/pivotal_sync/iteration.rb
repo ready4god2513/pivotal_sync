@@ -15,6 +15,6 @@ module PivotalSync
     element :start, DateTime
     element :finish, DateTime
     element :team_strength, Float
-    has_many :stories, Story
+    has_many :stories, Story, :tag => 'story'
   end
 end
