@@ -28,18 +28,19 @@ module PivotalSync
     element :updated_at, DateTime
     element :accepted_at, DateTime
     element :labels, String
-    has_one :owned_by, Person
-    has_one :requested_by, Person
-    has_many :attachments, Attachment
-    has_many :comments, Comment
+    has_one :owned_by, Person, :tag => 'owned_by'
+    has_one :requested_by, Person, :tag => 'requested_by'
+    has_many :attachments, Attachment, :tag => 'attachment'
+    has_many :comments, Comment, :tag => 'comment'
+    has_many :tasks, Task, :tag => 'task'
     
     def project
       Project.find(project_id)
     end
     
-    def tasks
-      Task.all(project_id, id)
-    end
+    # def tasks
+    #   Task.all(project_id, id)
+    # end
     
   end
 end

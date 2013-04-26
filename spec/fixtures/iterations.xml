@@ -14,9 +14,7 @@
         <url>http://www.pivotaltracker.com/story/show/46499703</url>
         <estimate type="float">1</estimate>
         <current_state>unstarted</current_state>
-        <description>Sed et nisi sit amet leo tempus pulvinar nec vel magna. Pellentesque arcu metus, iaculis eget sollicitudin sit amet, scelerisque ut quam. Nullam mollis ligula at massa viverra luctus. Nulla non erat id arcu feugiat feugiat quis eget augue. Donec vestibulum pretium mi non porttitor. Nulla dapibus gravida mauris vel posuere. Sed dictum ultricies tellus vel venenatis.
-
-&#402;&#172;&#729;&#8706;&#730;&#223;&#8710;&#729;&#402;</description>
+        <description>This is a description</description>
         <name>Just a little test</name>
         <requested_by>
           <person>
@@ -27,14 +25,14 @@
         </requested_by>
         <owned_by>
           <person>
-            <id type="integer">126384</id>
-            <name>Brandon Hansen</name>
-            <initials>BH</initials>
+            <id type="integer">123456</id>
+            <name>Sami Andrew</name>
+            <initials>SA</initials>
           </person>
         </owned_by>
         <created_at type="datetime">2013/03/19 21:25:26 UTC</created_at>
         <updated_at type="datetime">2013/03/19 21:33:26 UTC</updated_at>
-        <labels>123,testing,&#8710;&#730;&#730;&#8706;&#229;&#402;</labels>
+        <labels>123,testing</labels>
         <comments type="array">
           <comment>
             <id type="integer">39331775</id>
